@@ -51,52 +51,8 @@
       line-height: 1.6;
     }
 
-    .quran-player, .video-container {
+    .video-container {
       margin-top: 20px;
-    }
-
-    .routine {
-      text-align: left;
-      margin: 20px 0;
-    }
-
-    .routine ul {
-      list-style-type: none;
-      padding: 0;
-    }
-
-    .routine ul li {
-      background: #f9f9f9;
-      padding: 10px;
-      margin: 5px 0;
-      border-left: 5px solid #2E8B57;
-    }
-
-    footer {
-      background: #2E8B57;
-      color: white;
-      padding: 10px;
-      margin-top: 20px;
-    }
-
-    .quote {
-      font-style: italic;
-      color: #2E8B57;
-      margin: 20px 0;
-    }
-
-    .educational {
-      background: #f9f9f9;
-      padding: 15px;
-      border-radius: 5px;
-      margin: 20px 0;
-      text-align: left;
-    }
-
-    .educational p {
-      font-size: 1rem;
-      line-height: 1.6;
-      color: #555;
     }
 
     .video-container iframe {
@@ -104,22 +60,14 @@
       height: 200px;
       border: none;
       border-radius: 10px;
+      margin-bottom: 20px;
     }
 
-    .qa-item {
-      margin: 20px 0;
-      text-align: left;
-    }
-
-    .qa-item h3 {
-      color: #2E8B57;
-      font-size: 1.2rem;
-    }
-
-    .qa-item p {
-      font-size: 1rem;
-      line-height: 1.6;
-      color: #555;
+    footer {
+      background: #2E8B57;
+      color: white;
+      padding: 10px;
+      margin-top: 20px;
     }
   </style>
 </head>
@@ -130,32 +78,25 @@
   </header>
 
   <div class="container">
-    <!-- ইসলামের দাওয়াত -->
-    <div class="section">
-      <h2>ইসলামের দাওয়াত</h2>
-      <div class="educational">
-        <p>
-          ইসলাম হলো শান্তির ধর্ম। এটি মানবজাতিকে আল্লাহর পথে আহ্বান করে। রাসুলুল্লাহ (সাল্লাল্লাহু আলাইহি ওয়াসাল্লাম) বলেছেন: <br>
-          <strong>"তোমরা সর্বোত্তম পদ্ধতিতে মানুষকে আল্লাহর দিকে আহ্বান করো।"</strong>
-        </p>
-        <p>
-          ইসলামের মূল বিষয়গুলো হলো: <br>
-          - আল্লাহর একত্ববাদ (তাওহীদ) <br>
-          - রাসুলের প্রতি ঈমান <br>
-          - আখিরাতের প্রতি ঈমান <br>
-          - নামাজ, রোজা, জাকাত, হজ্জ ইত্যাদি ফরজ ইবাদত।
-        </p>
-      </div>
-    </div>
-
     <!-- ইসলামিক ভিডিও -->
     <div class="section">
       <h2>ইসলামিক ভিডিও</h2>
       <div class="video-container">
+        <!-- First YouTube Video -->
         <iframe
           width="100%"
           height="200"
-          src="https://youtu.be/xSVJmbF3JvI?"  <!-- Replace with your video link -->
+          src="https://www.youtube.com/embed/H9WbJ0fM4oE"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+
+        <!-- Second YouTube Video -->
+        <iframe
+          width="100%"
+          height="200"
+          src="https://www.youtube.com/embed/xSVJmbF3JvI"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
@@ -163,50 +104,27 @@
       </div>
     </div>
 
-    <!-- কার্টুন -->
+    <!-- ইসলামের দাওয়াত -->
     <div class="section">
-      <h2>ইসলামিক কার্টুন</h2>
-      <div class="video-container">
-        <iframe
-          width="100%"
-          height="200"
-          src="https://youtu.be/H9WbJ0fM4oE"  <!-- Replace with your cartoon link -->
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-      </div>
-    </div>
-
-    <!-- প্রশ্ন ও উত্তর -->
-    <div class="section">
-      <h2>প্রশ্ন ও উত্তর</h2>
-      <div class="qa-item">
-        <h3>প্রশ্ন: নামাজের নিয়ম কী?</h3>
-        <p>উত্তর: নামাজের নিয়ম হলো ওজু করা, কিবলামুখী হয়ে দাঁড়ানো, সুরা ফাতিহা ও অন্য সুরা পড়া, রুকু-সিজদা করা এবং সালাম ফেরানো।</p>
-      </div>
-      <div class="qa-item">
-        <h3>প্রশ্ন: রোজা রাখার ফজিলত কী?</h3>
-        <p>উত্তর: রোজা রাখার ফজিলত হলো আল্লাহর সন্তুষ্টি অর্জন, গুনাহ মাফ হওয়া এবং আত্মশুদ্ধি লাভ করা।</p>
-      </div>
-      <div class="qa-item">
-        <h3>প্রশ্ন: ইসলামে নারীর অধিকার কী?</h3>
-        <p>উত্তর: ইসলামে নারীর অধিকার হলো শিক্ষা, সম্পত্তি, বিবাহ এবং সম্মানজনক জীবনযাপনের অধিকার।</p>
-      </div>
+      <h2>ইসলামের দাওয়াত</h2>
+      <p>
+        ইসলাম হলো শান্তির ধর্ম। এটি মানবজাতিকে আল্লাহর পথে আহ্বান করে। রাসুলুল্লাহ (সাল্লাল্লাহু আলাইহি ওয়াসাল্লাম) বলেছেন: <br>
+        <strong>"তোমরা সর্বোত্তম পদ্ধতিতে মানুষকে আল্লাহর দিকে আহ্বান করো।"</strong>
+      </p>
     </div>
 
     <!-- ইসলামিক উক্তি -->
     <div class="section">
       <h2>ইসলামিক উক্তি</h2>
-      <div class="quote">
-        <p>"রাসুলুল্লাহ (সাল্লাল্লাহু আলাইহি ওয়াসাল্লাম) বলেছেন: 'রমজান মাসে যে ব্যক্তি একটি নফল ইবাদত করল, সে অন্য মাসের একটি ফরজ ইবাদতের সমান সওয়াব পাবে।'"</p>
-        <p>"আল্লাহ তায়ালা বলেন: 'হে ঈমানদারগণ, তোমাদের উপর রোজা ফরজ করা হয়েছে, যেমন ফরজ করা হয়েছিল তোমাদের পূর্ববর্তীদের উপর, যাতে তোমরা তাকওয়া অর্জন করতে পারো।'" (সূরা বাকারা, আয়াত ১৮৩)</p>
-      </div>
+      <p>
+        "রাসুলুল্লাহ (সাল্লাল্লাহু আলাইহি ওয়াসাল্লাম) বলেছেন: 'রমজান মাসে যে ব্যক্তি একটি নফল ইবাদত করল, সে অন্য মাসের একটি ফরজ ইবাদতের সমান সওয়াব পাবে।'"
+      </p>
     </div>
   </div>
 
   <footer>
     <p>আসুন আমরা সবাই হিংসা বিবাদ বাদ দিয়ে সবাইকে ইসলামের দাওয়াত দেই আল্লাহ আমাদের তৌফিক দান করুক আমিন| ❤️</p>
+  </footer>❤️</p>
   </footer>
 </body>
 </html>
